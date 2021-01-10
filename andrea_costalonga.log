@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.9)  10 JAN 2021 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.9)  10 JAN 2021 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assignment.tex
-(./assignment.tex
+**andrea_costalonga.tex
+(./andrea_costalonga.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> (/usr/share/texmf-dist/te
 x/latex/base/article.cls
@@ -346,7 +346,7 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count283
 \l__pdf_internal_box=\box50
-) (./assignment.aux)
+) (./andrea_costalonga.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
 LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
@@ -511,97 +511,97 @@ d on input line 149.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<assignment_files/figure-latex/unnamed-chunk-4-1.pdf, id=29, 435.6275pt x 286.0
-6876pt>
-File: assignment_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pd
-f)
-<use assignment_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-4-1.pdf  u
-sed on input line 200.
+<andrea_costalonga_files/figure-latex/unnamed-chunk-4-1.pdf, id=29, 435.6275pt 
+x 286.06876pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
+type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-4-1
+.pdf  used on input line 200.
 (pdftex.def)             Requested size: 435.62643pt x 286.06805pt.
-<assignment_files/figure-latex/unnamed-chunk-5-1.pdf, id=30, 435.6275pt x 286.0
-6876pt>
-File: assignment_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pd
-f)
-<use assignment_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-5-1.pdf  u
-sed on input line 204.
+<andrea_costalonga_files/figure-latex/unnamed-chunk-5-1.pdf, id=30, 435.6275pt 
+x 286.06876pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
+type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-5-1
+.pdf  used on input line 204.
 (pdftex.def)             Requested size: 435.62643pt x 286.06805pt.
 [3
 
- <./assignment_files/figure-latex/unnamed-chunk-4-1.pdf> <./assignment_files/fi
-gure-latex/unnamed-chunk-5-1.pdf>] [4
+ <./andrea_costalonga_files/figure-latex/unnamed-chunk-4-1.pdf> <./andrea_costa
+longa_files/figure-latex/unnamed-chunk-5-1.pdf>] [4
 
 ]
-<assignment_files/figure-latex/unnamed-chunk-7-1.pdf, id=56, 408.52625pt x 254.
-9525pt>
-File: assignment_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pd
-f)
-<use assignment_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-7-1.pdf  u
-sed on input line 255.
+<andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf, id=56, 408.52625pt
+ x 254.9525pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
+type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-7-1
+.pdf  used on input line 255.
 (pdftex.def)             Requested size: 408.54395pt x 254.96352pt.
-<assignment_files/figure-latex/unnamed-chunk-8-1.pdf, id=57, 408.52625pt x 251.
-94125pt>
-File: assignment_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pd
-f)
-<use assignment_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-8-1.pdf  u
-sed on input line 259.
+<andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf, id=57, 408.52625pt
+ x 251.94125pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
+type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-8-1
+.pdf  used on input line 259.
 (pdftex.def)             Requested size: 408.52525pt x 251.94063pt.
 [5
 
- <./assignment_files/figure-latex/unnamed-chunk-7-1.pdf> <./assignment_files/fi
-gure-latex/unnamed-chunk-8-1.pdf>] [6
+ <./andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf> <./andrea_costa
+longa_files/figure-latex/unnamed-chunk-8-1.pdf>] [6
 
 ] [7
 
 ]
-<assignment_files/figure-latex/unnamed-chunk-12-1.pdf, id=88, 435.6275pt x 283.
-0575pt>
-File: assignment_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type p
-df)
-<use assignment_files/figure-latex/unnamed-chunk-12-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-12-1.pdf  
-used on input line 368.
+<andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf, id=88, 435.6275pt
+ x 283.0575pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file 
+(type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-12-
+1.pdf  used on input line 368.
 (pdftex.def)             Requested size: 435.62643pt x 283.0568pt.
 
 Overfull \vbox (2.37384pt too high) detected at line 412
  []
 
-[8 <./assignment_files/figure-latex/unnamed-chunk-12-1.pdf>]
-<assignment_files/figure-latex/unnamed-chunk-15-1.pdf, id=101, 435.6275pt x 283
-.0575pt>
-File: assignment_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type p
-df)
-<use assignment_files/figure-latex/unnamed-chunk-15-1.pdf>
-Package pdftex.def Info: assignment_files/figure-latex/unnamed-chunk-15-1.pdf  
-used on input line 416.
+[8 <./andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf>]
+<andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf, id=101, 435.6275p
+t x 283.0575pt>
+File: andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
+(type pdf)
+<use andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf>
+Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-15-
+1.pdf  used on input line 416.
 (pdftex.def)             Requested size: 435.62643pt x 283.0568pt.
-[9 <./assignment_files/figure-latex/unnamed-chunk-15-1.pdf>] (./assignment.aux)
- ) 
+[9 <./andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf>] (./andrea_c
+ostalonga.aux) ) 
 Here is how much of TeX's memory you used:
- 13390 strings out of 479383
- 196214 string characters out of 5875831
- 532717 words of memory out of 5000000
+ 13388 strings out of 479383
+ 196481 string characters out of 5875831
+ 532666 words of memory out of 5000000
  30219 multiletter control sequences out of 15000+600000
- 461217 words of font info for 96 fonts, out of 8000000 for 9000
+ 461126 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,6n,85p,515b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dis
-t/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm
--rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/tex
-mf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/
-lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
-/usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fo
-nts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-
-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public
-/lm/lmtko10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on assignment.pdf (9 pages, 280051 bytes).
+ 79i,6n,85p,522b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/e
+nc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
+/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts
+/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10
+.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-
+dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share
+/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/font
+s/type1/public/lm/lmtko10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt
+12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on andrea_costalonga.pdf (9 pages, 280721 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams
