@@ -3,7 +3,7 @@ n = c(10,15,10,15) #Number of elements for every col
 var = c(1,1,1,1) #Variance for every col
 mu = c(0,0,0,0) #Mean for every col
 k=4 #Number of cols
-N = 1e6#Number of iteration for simulation
+N = 1e5#Number of iteration for simulation
 sim.N.F <- rep(0,N)
 for(l in 1:N){
     y <- rnorm(sum(n), mean = 0, sd = sqrt(var[1]))#Same variance for every Yij
@@ -23,7 +23,15 @@ for(l in 1:N){
     }
     sim.N.F[l] <- (SSR/(k-1))/(SSE/(sum(n)-k)) #value of F observed (Fobs)
 }
-hist(sim.N.F, freq=FALSE, xlab="F",breaks = seq(min(sim.N.F), max(sim.N.F), length.out = 50), ylab="Distribution")
+h <- hist(sim.N.F, freq=FALSE, xlab="F",breaks = seq(min(sim.N.F), 
+    max(sim.N.F), length.out = 50), xlim=c(0,8), ylab="Distribution")
 plot(function(x) df(x, df1=k-1, df2=sum(n)-k),xlim=c(0,8), col='red', add=TRUE)
 legend(3.5, 0.4, legend=c("Exact distribution"),
        col=c("red"), lwd=1,lty=c(1), pch=c(NA), cex=0.8)
+hh <- rep(0,length(h$density))
+for(i in 1:length(h$density))
+    hh[i] <- sum(h$density[1:i])*(h$breaks[i+1]-h$breaks[i])
+print(h$mids)
+print(h$density)
+plot(h$mids,hh,  type="h",xlab="F",  ylab="Distribution")
+plot(function(x) pf(x, df1=k-1, df2=sum(n)-k),xlim=c(0,8), col='red', add=TRUE)
