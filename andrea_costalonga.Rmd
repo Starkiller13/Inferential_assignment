@@ -25,6 +25,7 @@ tau <- function(theta){
     return(out2)
 }
 
+N = 1e5 #numer of iterations
 theta0 = 2/3 ##Neg bin success probability
 r = 10 ##Neg bin size param
 n <- c(10,50) ## Sample sizes
@@ -38,11 +39,10 @@ $\hat\theta$ is defined as
 \[ \hat\theta = \frac{r*n}{n*(r + \bold{\bar y})} \]
 where r is the $index$ parameter of the negative binomial, n is the size 
 of the r. ve. and $\bold{\bar y}$ is the sample mean.
-Those results were obtained finding the maximum of the likelihood function
+Those results were obtained finding the maximum of the log likelihood function
 $l(\hat\theta)$ .
 
 ```{r}
-N = 1e5
 sim.N.tau <-matrix(NA, nrow = N, ncol = 2)
 for(i in 1:N){
     xnegbin10 <- rnbinom(n=10,size=10,prob=theta0)
@@ -58,23 +58,24 @@ In order to do so I've calculated the variance of $\hat\theta$ with Cramér-Rao'
 knowing that the Maximum Likelihood Estimator is asymptotically efficient. 
 In formulas:
 \[Var(\hat\theta) = I\textsubscript{n}(\theta)^{-1}\] where $I\textsubscript{n}(\theta)$ is the Fisher information
-\[I\textsubscript{n}(\theta) = n*I(\theta)\] knowing that our r. ve. is built from $Y1, ...., Yn i.i.d.$ variables and
-\[I(\theta) = \frac{\theta^2*(1-\theta)}{r*n}\] which is obtained by the definition of Fisher information.
-After that I've used the Delta Method to obtain the variance and the mean of the gaussian curve that represent our ideal density
+\[I\textsubscript{n}(\theta) = n*I(\theta)\] knowing that our r. ve. is built from $Y\textsubscript{1}, ...., Y\textsubscript{n}$  $i.i.d.$ variables and
+\[I(\theta) = \frac{r}{\theta^2*(1-\theta)}\] which is obtained by the definition of Fisher information.
+In the end we have:
+    \[Var(\hat\theta) = \frac{\theta^2*(1-\theta)}{r*n}\]
+Then I've used the Delta Method to obtain the variance and the mean of the gaussian curve that represent our ideal density
 (and distribution), and I've got the following results:
 
 $\hat\tau$'s variance:
-\[var(\hat\tau) = (\frac{d tau(\theta)}{d\theta})^2*Var(\hat\theta)\]
+\[var(\hat\tau) = (\frac{d tau(\theta)}{d\theta})^2*Var(\hat\theta)= (\frac{1}{\theta*(1-\theta)})^2*\frac{\theta^2*(1-\theta)}{r*n} = \frac{1}{(1-\theta)*r*n} \]
 $\hat\tau$'s mean:
 \[E[\hat\tau] = tau(\theta)\]
-Evaluating variance and mean in $\theta\textsubscript{0}$ bring us to the real p.d.f. of $\hat\tau$
+Evaluating variance and mean in $\theta\textsubscript{0}$ bring us to the real p.d.f. of $\hat\tau$:
 
 ```{r}
 true_mean = (tau(theta0))
-true_var10_o <- (theta0^2*(1-theta0))/(r*n[1])
-true_var10 <- true_var10_o*(1/(theta0*(1-theta0)))^2
-true_var50_o <- (theta0^2*(1-theta0))/(r*n[2])
-true_var50 <- true_var50_o*(1/(theta0*(1-theta0)))^2
+#True variance of tau hat (n=10, n=50)
+true_var10_tau <- 1/(r*n[1]*(1-theta0))
+true_var50_tau <- 1/(r*n[2]*(1-theta0))
 ```
 
 \clearpage
@@ -84,8 +85,8 @@ Plot for n = 10:
 
 ```{r, echo=FALSE}
 hist(sim.N.tau[,1], freq = FALSE, breaks=20, xlim=c(0,1.5), xlab = "n = 10 extimated p.d.f")
-plot(function(x) dnorm(x, mean = true_mean, sd=sqrt(true_var10)),
-    add=TRUE,ylim=8, col='red')
+plot(function(x) dnorm(x, mean = true_mean, sd=sqrt(true_var10_tau)),
+    add=TRUE,ylim=8,xlim=c(0,1.5), col='red')
 legend(0, 2, legend=c("Exact p.d.f"),
     col=c("red"), bg='white', lwd=1,lty=c(1), pch=c(NA), cex=0.8)
 ```
@@ -94,21 +95,24 @@ Plot for n = 50:
 
 ```{r, echo=FALSE}
 hist(sim.N.tau[,2], freq = FALSE, breaks=20, xlim=c(0.4,1), xlab = "n = 50 extimated p.d.f")
-plot(function(x) dnorm(x, mean = true_mean, sd=sqrt(true_var50)),
-    add=TRUE,ylim=8, col='red')
+plot(function(x) dnorm(x, mean = true_mean, sd=sqrt(true_var50_tau)),
+    add=TRUE,ylim=8,xlim=c(0.4,1), col='red')
 legend(0.4, 5, legend=c("Exact p.d.f"),
     col=c("red"), bg='white', lwd=1,lty=c(1), pch=c(NA), cex=0.8)
 ```
 \clearpage
 We can observe that the extimated p.d.f. fits perfecly the exact p.d.f.. I've runned the simulation with just 10^5
-trials but to obtain something that fits even better under the curve I could have runned with more samples with the perks of
-having to wait a large amount of time to execute the code.
+iterations but to obtain something that fits even better I could have runned with a larger $N$ with the perks of
+having a higher processing time.
 
 \subsection{Coverage Probability, Wald C.I.}
 In the following lines I've made a simulation to study the coverage probability of the .95 Wald confidence interval for $\tau$
 and $\theta$
 
 ```{r}
+true_var10_th <- (theta0^2*(1-theta0))/(r*n[1])
+true_var50_th <- (theta0^2*(1-theta0))/(r*n[2])
+
 sim.N.CI_the <-matrix(NA, nrow = N, ncol = 4)
 sim.N.CI_tau <-matrix(NA, nrow = N, ncol = 4)
 for(i in 1:N){
@@ -116,16 +120,16 @@ for(i in 1:N){
     xnegbin50 <- rnbinom(n=n[2],size=r,prob=theta0)
     sim.N.CI_the[i,1:2] <- r*n[1]/(r*n[1]+sum(xnegbin10)) 
     sim.N.CI_the[i,1:2] <- sim.N.CI_the[i,1:2] + c(-1,1)*qnorm(p = alpha/2,
-         lower.tail = FALSE)*sqrt(true_var10_o)
+         lower.tail = FALSE)*sqrt(true_var10_th)
     sim.N.CI_the[i,3:4] <- r*n[2]/(r*n[2]+sum(xnegbin50)) 
     sim.N.CI_the[i,3:4] <- sim.N.CI_the[i,3:4] + c(-1,1)*qnorm(p = alpha/2,
-         lower.tail = FALSE)*sqrt(true_var50_o)
+         lower.tail = FALSE)*sqrt(true_var50_th)
     sim.N.CI_tau[i,1:2] <- tau(r*n[1]/(r*n[1]+sum(xnegbin10))) 
     sim.N.CI_tau[i,1:2] <- sim.N.CI_tau[i,1:2] + c(-1,1)*qnorm(p = alpha/2,
-        lower.tail = FALSE)*sqrt(true_var10)
+        lower.tail = FALSE)*sqrt(true_var10_tau)
     sim.N.CI_tau[i,3:4] <- tau(r*n[2]/(r*n[2]+sum(xnegbin50))) 
     sim.N.CI_tau[i,3:4] <- sim.N.CI_tau[i,3:4] + c(-1,1)*qnorm(p = alpha/2, 
-        lower.tail = FALSE)*sqrt(true_var50)
+        lower.tail = FALSE)*sqrt(true_var50_tau)
 }
 theta10.inside <- apply(sim.N.CI_the[,1:2], MARGIN = 1, 
     function(x)ifelse(theta0>=x[1]&theta0<=x[2],1,0))
@@ -191,7 +195,6 @@ n = c(10,15,10,15) #Number of elements for every col
 var = c(1,1,1,1) #Variance for every col
 mu = c(0,0,0,0) #Mean for every col
 k=4 #Number of cols
-N = 1e6 #Number of iterations for simulation
 ```
 
 In order to estimate the distribution of the F-Statistics for ANOVA, we need to calculate SSR and SSE for every trial, 
@@ -296,7 +299,7 @@ Those are the plots obtained from the latest analysis:
 
 ```{r, echo = FALSE}
 h1<-hist(sim.N.F_n, freq=FALSE, xlab="F", breaks=seq(min(sim.N.F_n), 
-    max(sim.N.F_n), length.out = 50), xlim=c(0,8),ylab="Density", col="blue")
+    max(sim.N.F_n), length.out = 50), xlim=c(0,8), ylab="Density", col="blue")
 plot(function(x) df(x, df1=k-1, df2=sum(n)-k),
     xlim=c(0,8),add=TRUE, col='red')
 legend(3, 0.4, legend=c("Exact density"),

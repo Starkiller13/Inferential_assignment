@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.9)  11 JAN 2021 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.9)  14 JAN 2021 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,17 +496,17 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 133.
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 139.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 140.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 148.
+(Font)              <12> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 148.
+(Font)              <8> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 148.
+(Font)              <6> on input line 149.
 
 Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 150.
+d on input line 151.
 
 [1
 
@@ -539,7 +539,7 @@ File: andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-7-1
-.pdf  used on input line 262.
+.pdf  used on input line 264.
 (pdftex.def)             Requested size: 408.54395pt x 254.96352pt.
 <andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf, id=57, 408.52625pt
  x 251.94125pt>
@@ -547,7 +547,7 @@ File: andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
 type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-8-1
-.pdf  used on input line 266.
+.pdf  used on input line 268.
 (pdftex.def)             Requested size: 408.52525pt x 251.94063pt.
 [5
 
@@ -563,18 +563,18 @@ File: andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file
 (type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-12-1.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-12-
-1.pdf  used on input line 380.
+1.pdf  used on input line 381.
 (pdftex.def)             Requested size: 435.62643pt x 283.0568pt.
-<andrea_costalonga_files/figure-latex/unnamed-chunk-12-2.pdf, id=89, 436.63126p
+<andrea_costalonga_files/figure-latex/unnamed-chunk-12-2.pdf, id=89, 438.63875p
 t x 248.93pt>
 File: andrea_costalonga_files/figure-latex/unnamed-chunk-12-2.pdf Graphic file 
 (type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-12-2.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-12-
-2.pdf  used on input line 381.
-(pdftex.def)             Requested size: 436.63019pt x 248.92938pt.
+2.pdf  used on input line 382.
+(pdftex.def)             Requested size: 438.64435pt x 248.93317pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
 [][]
  []
 
@@ -586,7 +586,7 @@ File: andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file
 (type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-15-1.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-15-
-1.pdf  used on input line 431.
+1.pdf  used on input line 432.
 (pdftex.def)             Requested size: 435.62643pt x 283.0568pt.
 <andrea_costalonga_files/figure-latex/unnamed-chunk-15-2.pdf, id=114, 436.63126
 pt x 248.93pt>
@@ -594,10 +594,10 @@ File: andrea_costalonga_files/figure-latex/unnamed-chunk-15-2.pdf Graphic file
 (type pdf)
 <use andrea_costalonga_files/figure-latex/unnamed-chunk-15-2.pdf>
 Package pdftex.def Info: andrea_costalonga_files/figure-latex/unnamed-chunk-15-
-2.pdf  used on input line 432.
+2.pdf  used on input line 433.
 (pdftex.def)             Requested size: 436.63019pt x 248.92938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 [][]
  []
 
@@ -605,11 +605,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--433
 rea_costalonga_files/figure-latex/unnamed-chunk-15-2.pdf>] (./andrea_costalonga
 .aux) ) 
 Here is how much of TeX's memory you used:
- 13398 strings out of 479383
- 197175 string characters out of 5875831
- 533658 words of memory out of 5000000
+ 13396 strings out of 479383
+ 197155 string characters out of 5875831
+ 534445 words of memory out of 5000000
  30229 multiletter control sequences out of 15000+600000
- 460944 words of font info for 93 fonts, out of 8000000 for 9000
+ 460853 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,6n,85p,522b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texm
@@ -625,7 +625,7 @@ lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/t
 exmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/lm/lmtko10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></
 usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on andrea_costalonga.pdf (11 pages, 300309 bytes).
+Output written on andrea_costalonga.pdf (11 pages, 301065 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  155 compressed objects within 2 object streams
